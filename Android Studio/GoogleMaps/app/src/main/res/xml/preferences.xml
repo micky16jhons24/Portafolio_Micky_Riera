@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notificaciones">
+        <ListPreference
+            android:key="frecuencia_notificaciones"
+            android:title="Frecuencia de Notificaciones"
+            android:summary="Selecciona con qué frecuencia deseas recibir notificaciones"
+            android:defaultValue="diario"
+            android:entries="@array/frecuencia_opciones"
+            android:entryValues="@array/frecuencia_valores" />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

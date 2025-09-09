@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<estudio>
+    <clientes>
+        <codigo>1</codigo>
+        <dni>12345678O</dni>
+        <nombre>fghgf</nombre>
+        <apellido>hgfhfgh</apellido>
+        <telefono>546456456</telefono>
+        <correo>fghfg</correo>
+        <codigoPostal>ghfghg</codigoPostal>
+    </clientes>
+</estudio>

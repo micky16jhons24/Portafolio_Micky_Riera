@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declara la versión del archivo XML y su codificación (UTF-8). -->
+
+<!-- Declara el espacio de nombres XML para los atributos personalizados de la librería (en este caso para los atributos específicos de ConstraintLayout). -->
+<!-- Declara el espacio de nombres XML para atributos específicos de herramientas de desarrollo (por ejemplo, para previsualizaciones). -->
+<!-- Establece que el ancho del ConstraintLayout debe ocupar todo el ancho del contenedor padre. -->
+<!-- Establece que la altura del ConstraintLayout debe ocupar toda la altura del contenedor padre. -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- Define el contexto de la actividad principal en las herramientas de desarrollo para la previsualización en el editor. -->
+
+    <!-- TextView que muestra un texto centrado en la pantalla -->
+    <!-- Asigna un identificador único para este TextView. -->
+    <!-- Establece que el ancho del TextView debe ser de 184dp. -->
+    <!-- Establece que la altura del TextView debe ser de 68dp. -->
+    <!-- Establece la fuente del texto utilizando un archivo de fuente personalizado (en este caso 'creepster'). -->
+    <!-- Establece el texto que se mostrará en el TextView. -->
+    <!-- Establece que el texto debe estar alineado en el centro. -->
+    <!-- Establece el tamaño del texto a 28sp (escala para diferentes resoluciones de pantalla). -->
+    <!-- Establece el estilo del texto en negrita. -->
+    <!-- Constrains (limita) el TextView para que esté alineado con el borde inferior del contenedor padre (ConstraintLayout). -->
+    <!-- Constrains el TextView para que esté alineado con el borde derecho del contenedor padre. -->
+    <!-- Establece la posición horizontal del TextView dentro del ConstraintLayout (0.0 significa alineado a la izquierda). -->
+    <!-- Constrains el TextView para que esté alineado con el borde izquierdo del contenedor padre. -->
+    <!-- Constrains el TextView para que esté alineado con el borde superior del contenedor padre. -->
+
+    <TextView
+android:id="@+id/textView"
+    android:layout_width="184dp"
+    android:layout_height="68dp"
+    android:fontFamily="@font/creepster"
+    android:text="NEVER STOP EXPLORING"
+    android:textAlignment="center"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.051" />
+    <!-- Establece la posición vertical del TextView dentro del ConstraintLayout (0.051 significa ligeramente más cerca de la parte superior). -->
+
+    <!-- Botón de imagen para favoritos -->
+    <!-- Asigna un identificador único para este botón. -->
+    <!-- Establece que el ancho del botón debe ser de 49dp. -->
+    <!-- Establece que el ancho del botón debe ser de 49dp. -->
+    <!-- Establece el fondo del botón utilizando un atributo de tema (sin borde). -->
+    <!-- Establece una descripción accesible para el botón (útil para accesibilidad). -->
+    <!-- Establece que la imagen dentro del botón debe ajustarse centrada, recortando si es necesario. -->
+    <!-- Establece la imagen del botón (en este caso, un ícono de favoritos). -->
+    <!-- Asocia un método de acción al hacer clic en el botón (en este caso, un método llamado 'onClickFavoritos'). -->
+    <!-- Constrains el botón para que esté alineado con el borde inferior del contenedor padre. -->
+    <!-- Establece la posición horizontal del botón dentro del ConstraintLayout (más cerca del borde derecho). -->
+    <!-- Constrains el botón para que esté alineado con el borde izquierdo del contenedor padre. -->
+    <!-- Constrains el botón para que esté alineado con el borde superior del contenedor padre. -->
+
+    <ImageButton
+android:id="@+id/botonFavoritos"
+    android:layout_width="49dp"
+    android:layout_height="57dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Favoritos"
+    android:scaleType="fitCenter"
+    android:src="@drawable/favourites"
+    android:onClick="onClickFavoritos"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.704"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.05" />
+    <!-- Establece la posición vertical del botón dentro del ConstraintLayout (cerca de la parte superior). -->
+
+    <!-- Botón de imagen para ajustes -->
+    <!-- Asigna un identificador único para este botón. -->
+    <!-- Establece que el ancho del botón debe ser de 49dp. -->
+    <!-- Establece que la altura del botón debe ser de 54dp. -->
+    <!-- Establece el fondo del botón utilizando un atributo de tema (sin borde). -->
+    <!-- Establece una descripción accesible para el botón (útil para accesibilidad). -->
+    <!-- Establece que la imagen dentro del botón debe ajustarse centrada, recortando si es necesario. -->
+    <!-- Establece la imagen del botón (en este caso, un ícono de ajustes). -->
+    <!-- Asocia un método de acción al hacer clic en el botón (en este caso, un método llamado 'onClickAjustes'). -->
+    <!-- Constrains el botón para que esté alineado con el borde inferior del contenedor padre. -->
+    <!-- Constrains el botón para que esté alineado con el borde derecho del contenedor padre. -->
+    <!-- Establece la posición horizontal del botón dentro del ConstraintLayout (más cerca del borde derecho). -->
+    <!-- Constrains el botón para que esté alineado con el borde izquierdo del contenedor padre. -->
+    <!-- Constrains el botón para que esté alineado con el borde superior del contenedor padre. -->
+
+    <ImageButton
+    android:id="@+id/botonAjustes"
+    android:layout_width="49dp"
+    android:layout_height="54dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Ajustes"
+    android:scaleType="fitCenter"
+    android:src="@drawable/settings"
+    android:onClick="onClickAjustes"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.911"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.054" />
+    <!-- Establece la posición vertical del botón dentro del ConstraintLayout (cerca de la parte superior). -->
+
+    <!-- FrameLayout que servirá como contenedor de otros fragmentos -->
+    <!-- Asigna un identificador único para este FrameLayout. -->
+    <!-- Establece que el ancho del FrameLayout debe ocupar todo el ancho del contenedor padre. -->
+    <!-- Establece que la altura del FrameLayout debe ser 0dp, ya que su tamaño será gestionado por las restricciones de layout. -->
+    <!-- Añade un margen superior de 16dp para separar este FrameLayout de los elementos anteriores. -->
+    <!-- Establece que este FrameLayout debe ocupar todo el espacio disponible restante. -->
+    <!-- Constrains el FrameLayout para que esté alineado con el borde inferior del contenedor padre. -->
+    <!-- Constrains el FrameLayout para que esté alineado con el borde derecho del contenedor padre. -->
+    <!-- Constrains el FrameLayout para que esté alineado con el borde izquierdo del contenedor padre. -->
+
+    <FrameLayout
+android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="16dp"
+    android:layout_weight="1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/textView" />
+    <!-- Constrains el FrameLayout para que esté alineado debajo del TextView previamente definido. -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Cierra el ConstraintLayout que es el contenedor principal de todos los elementos dentro de él. -->

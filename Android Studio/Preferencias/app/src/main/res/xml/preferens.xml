@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Categoría 1 -->
+    <PreferenceCategory android:title="CATEGORIA 1" android:layout="@layout/custom_preference_category">
+
+    <CheckBoxPreference
+            android:key="desactivar_unico_SO"
+            android:title="UNICO SISTEMA OPERATIVO"
+            android:summary="Marca si tienes preferencia por un solo S.O" />
+    </PreferenceCategory>
+
+    <!-- Categoría 2 -->
+    <PreferenceCategory android:title="CATEGORIA 2" android:layout="@layout/custom_preference_category2">
+        <ListPreference
+            android:key="sistema_operativo"
+            android:title="SISTEMA OPERATIVO"
+            android:summary="Pulsa para elegir el Sistema Operativo"
+            android:entries="@array/opciones"
+            android:entryValues="@array/valores" />
+
+        <EditTextPreference
+            android:key="version_sistema"
+            android:title="VERSION DEL SISTEMA"
+            android:summary="Escribe para elegir el Sistema Operativo" />
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

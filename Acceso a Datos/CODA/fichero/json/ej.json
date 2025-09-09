@@ -1,0 +1,13 @@
+{
+  "clientes": [
+    {
+      "codigo": 1,
+      "dni": "12345678J",
+      "nombre": "yvh",
+      "apellido": "yugvh",
+      "telefono": "123456789",
+      "correo": "mlkjiohi",
+      "codigoPostal": "765765tf"
+    }
+  ]
+}

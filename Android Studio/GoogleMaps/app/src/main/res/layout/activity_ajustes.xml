@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Se declara el espacio de nombres XML para los atributos de Android -->
+<!-- El ancho del ConstraintLayout se ajusta al ancho completo del contenedor padre -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"> <!-- La altura del ConstraintLayout se ajusta a la altura completa del contenedor padre -->
+
+    <!-- FrameLayout que servirá como contenedor para otros elementos (como un fragmento o vista) -->
+    <!-- Se le asigna un ID único, útil para hacer referencia al FrameLayout desde el código Java/Kotlin -->
+    <!-- El ancho del FrameLayout se ajusta al ancho del contenedor padre -->
+    <!-- La altura del FrameLayout se ajusta a la altura del contenedor padre -->
+
+<FrameLayout
+android:id="@+id/ajustes_contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

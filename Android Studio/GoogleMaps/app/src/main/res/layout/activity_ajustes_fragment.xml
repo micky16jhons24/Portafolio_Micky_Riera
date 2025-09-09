@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Esta línea define la versión de XML que se está utilizando (1.0) y la codificación de caracteres (UTF-8). La codificación UTF-8 es la más común y permite el uso de caracteres especiales (acentos, símbolos, etc.). -->
+<!-- Esta línea define el espacio de nombres (namespace) para los atributos estándar de Android. Es necesario para poder usar los atributos como "android:id", "android:layout_width", etc. -->
+<!-- Este es un espacio de nombres utilizado para los atributos personalizados de Android, como los de las bibliotecas de terceros (en este caso, `ConstraintLayout`). Permite usar atributos como "app:layout_constraintTop_toTopOf", que se usan para definir restricciones de diseño. -->
+<!-- Este espacio de nombres es utilizado para herramientas de desarrollo, principalmente para Android Studio. Permite agregar atributos como "tools:context", que no afectan la aplicación en ejecución, pero ayudan en el diseño dentro de Android Studio. -->
+<!-- Asigna un identificador único al `ConstraintLayout`. Esto permite que el contenedor pueda ser referenciado en el código Java o Kotlin (en este caso, el ID será "main"). -->
+<!-- Establece que el ancho del `ConstraintLayout` debe ajustarse al ancho completo de su contenedor padre. "match_parent" hace que la vista ocupe todo el espacio disponible horizontalmente. -->
+<!-- Establece que la altura del `ConstraintLayout` debe ajustarse a la altura completa de su contenedor padre. "match_parent" hace que la vista ocupe todo el espacio disponible verticalmente. -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjustesFragment">
+    <!-- El atributo "tools:context" le indica a Android Studio qué fragmento o actividad está utilizando este layout en tiempo de diseño. En este caso, está vinculado con el `AjustesFragment`. Este atributo no afecta el comportamiento de la aplicación, pero ayuda a mostrar el diseño adecuado en el editor de vistas de Android Studio. -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Esta línea cierra la etiqueta del `ConstraintLayout`, lo que significa el final del diseño de la vista. -->

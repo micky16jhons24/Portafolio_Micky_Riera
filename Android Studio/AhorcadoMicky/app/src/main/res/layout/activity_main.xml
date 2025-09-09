@@ -1,0 +1,89 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Campo de texto para ingresar la palabra a adivinar -->
+    <EditText
+        android:id="@+id/etWordToGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la palabra a adivinar"
+        android:inputType="text"
+        android:maxLength="10"/>
+
+    <!-- Botón para iniciar el juego -->
+
+    <!-- Vista para el dibujo del muñeco de ahorcado -->
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Juego" />
+
+    <com.example.ahorcadomicky.Ahorcado
+        android:id="@+id/hangmanView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+
+
+    <!-- Texto para mostrar la palabra a adivinar con guiones bajos -->
+    <TextView
+        android:id="@+id/tvWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <!-- Campo de texto para ingresar la letra -->
+    <EditText
+        android:id="@+id/etLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese una letra"
+        android:maxLength="1"
+        android:inputType="text"
+        android:visibility="gone"/>
+
+    <!-- Botón para enviar la letra -->
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adivinar"
+        android:visibility="gone"/>
+
+    <!-- Texto para mostrar los intentos restantes -->
+    <TextView
+        android:id="@+id/tvAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intentos restantes: 6"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+    <!-- Texto para mostrar el estado del juego (ganar/perder) -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <!-- Botón de reinicio del juego -->
+    <Button
+        android:id="@+id/btnRestartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Juego"
+        android:visibility="gone"/>
+</LinearLayout>

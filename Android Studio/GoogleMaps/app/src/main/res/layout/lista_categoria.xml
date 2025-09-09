@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declara la versión del archivo XML y su codificación (UTF-8). -->
+
+<!-- Declara el espacio de nombres XML para los atributos estándar de Android. -->
+<!-- Establece que el ancho del CardView debe ocupar todo el ancho del contenedor padre. -->
+<!-- Establece que la altura del CardView debe ajustarse al contenido dentro de él. -->
+<!-- Añade un margen de 8dp alrededor del CardView para separarlo de otros elementos. -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp">
+    <!-- Añade un relleno de 16dp dentro del CardView, separando el contenido del borde del CardView. -->
+
+
+    <!-- Asigna un identificador único para este TextView, lo que permite hacer referencia a él desde el código. -->
+    <!-- Establece que el ancho del TextView debe ajustarse al tamaño del texto que contiene. -->
+    <!-- Establece que la altura del TextView debe ajustarse al tamaño del texto que contiene. -->
+    <!-- Establece el texto que se mostrará en el TextView. -->
+    <!-- Establece el tamaño del texto a 16sp (tamaño de texto escalable para diferentes densidades de pantalla). -->
+
+    <TextView
+android:id="@+id/tvCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Category Name"
+    android:textSize="16sp"
+    android:textColor="@android:color/black" />
+    <!-- Establece el color del texto como negro (usando el color predefinido del sistema Android). -->
+
+    </androidx.cardview.widget.CardView>
+    <!-- Esta línea cierra el tag del CardView, que es el contenedor principal en este diseño. -->

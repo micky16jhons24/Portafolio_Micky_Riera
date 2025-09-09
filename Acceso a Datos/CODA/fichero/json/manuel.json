@@ -1,0 +1,13 @@
+{
+  "clientes": [
+    {
+      "codigo": 2,
+      "dni": "12345678H",
+      "nombre": "manuel",
+      "apellido": "avila",
+      "telefono": "123123123",
+      "correo": "manuel@gmail.com",
+      "codigoPostal": "23233"
+    }
+  ]
+}

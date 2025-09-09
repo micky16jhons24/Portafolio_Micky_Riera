@@ -1,0 +1,31 @@
+{
+  "clientes": [
+    {
+      "codigo": 1,
+      "dni": "15424950T",
+      "nombre": "micky",
+      "apellido": "riera",
+      "telefono": "675109951",
+      "correo": "micky@gmail.com",
+      "codigoPostal": "28019"
+    },
+    {
+      "codigo": 2,
+      "dni": "15424950T",
+      "nombre": "micky",
+      "apellido": "riera",
+      "telefono": "675109951",
+      "correo": "micky@gmail.com",
+      "codigoPostal": "28019"
+    },
+    {
+      "codigo": 3,
+      "dni": "15424950T",
+      "nombre": "micky",
+      "apellido": "riera",
+      "telefono": "675109951",
+      "correo": "micky@gmail.com",
+      "codigoPostal": "28019"
+    }
+  ]
+}

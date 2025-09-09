@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declara la versión del archivo XML y su codificación -->
+<!-- Declara el espacio de nombres XML para los atributos estándar de Android. Esto permite el uso de los atributos típicos de Android (como layout_width, layout_height, etc.) -->
+<!-- Declara el espacio de nombres XML para atributos específicos de librerías adicionales (como ConstraintLayout). -->
+<!-- Declara el espacio de nombres XML para atributos que proporcionan herramientas de desarrollo (como hints de diseño). -->
+<!-- Asigna un identificador único a la vista raíz para hacer referencia a ella desde el código. -->
+<!-- Establece que el ancho del ConstraintLayout debe ajustarse al ancho completo de su contenedor padre. -->
+<!-- Establece que la altura del ConstraintLayout debe ajustarse a la altura completa de su contenedor padre. -->
+<!-- Establece un fondo blanco para el ConstraintLayout. -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <!-- Proporciona el contexto de la actividad que utiliza este layout, para fines de desarrollo y vista previa. -->
+
+    <!-- Fragmento de menú, botón favorito y botón ajustes -->
+    <!-- Asigna un identificador único para este FrameLayout. -->
+    <!-- Establece que el ancho del FrameLayout debe ocupar todo el ancho del contenedor padre. -->
+    <!-- La altura del FrameLayout se ajusta al contenido (es decir, al tamaño del fragmento dentro). -->
+    <!-- Establece la restricción para que el final del FrameLayout se alinee con el final del contenedor padre (el ConstraintLayout). -->
+    <!-- Establece la restricción para que el inicio del FrameLayout se alinee con el inicio del contenedor padre. -->
+    <!-- Establece la restricción para que la parte superior del FrameLayout se alinee con la parte superior del contenedor padre. -->
+
+
+    <FrameLayout
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título -->
+    <!-- Asigna un identificador único para este TextView. -->
+    <!-- La anchura del TextView se ajusta al contenido. -->
+    <!-- La altura del TextView se ajusta al contenido. -->
+    <!-- Añade un relleno de 16dp alrededor del texto para darle espacio extra. -->
+    <!-- Establece el tamaño del texto a 18sp (scale-independent pixels, para una mejor adaptación a distintos tamaños de pantalla). -->
+    <!-- Hace que el texto del TextView sea en negrita. -->
+    <!-- Establece la restricción para que el final del TextView se alinee con el final del contenedor padre. -->
+    <!-- Establece la restricción para que el inicio del TextView se alinee con el inicio del contenedor padre. -->
+    <!-- Establece la restricción para que la parte superior del TextView se alinee con la parte superior del contenedor padre. -->
+    <!-- RecyclerView para mostrar las categorías -->
+
+    <TextView
+android:id="@+id/titulo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- RecyclerView para mostrar las categorías -->
+    <!-- Asigna un identificador único para este RecyclerView. -->
+    <!-- Establece que el ancho del RecyclerView debe ocupar todo el ancho del contenedor padre. -->
+    <!-- Establece una altura fija de 200dp para el RecyclerView. -->
+    <!-- Añade un relleno de 12dp alrededor del RecyclerView. -->
+    <!-- Establece la restricción para que el final del RecyclerView se alinee con el final del contenedor padre. -->
+    <!-- Establece la restricción para que el final del RecyclerView se alinee con el final del contenedor padre. -->
+    <!-- Ajusta la posición horizontal del RecyclerView a la izquierda (el valor es entre 0.0 y 1.0, donde 0.0 es la izquierda). -->
+    <!-- Establece la restricción para que el inicio del RecyclerView se alinee con el inicio del contenedor padre. -->
+    <!-- Establece la restricción para que la parte superior del RecyclerView se alinee con la parte superior del contenedor padre. -->
+    <!-- Ajusta la posición vertical del RecyclerView. Este valor controla su distancia desde el top del contenedor. -->
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/reciclo24"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="12dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.118" />
+
+    <!-- Especifica que este fragmento es un fragmento de mapa de Google. -->
+    <!-- Establece un ancho fijo para el fragmento del mapa. -->
+    <!-- Establece una altura fija para el fragmento del mapa. -->
+    <!-- Establece la restricción para que el final del fragmento se alinee con el final del contenedor padre. -->
+    <!-- Establece la restricción para que el final del fragmento se alinee con el final del contenedor padre. -->
+    <!-- Ajusta la posición horizontal del fragmento para que se alinee con la derecha del contenedor padre. -->
+    <!-- Establece la restricción para que el inicio del fragmento se alinee con el inicio del contenedor padre. -->
+    <!-- Establece la restricción para que la parte superior del fragmento se alinee con la parte superior del contenedor padre. -->
+    <!-- Ajusta la posición vertical del fragmento en relación con el contenedor padre. -->
+
+
+    <fragment
+    android:id="@+id/mapFragment"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="411dp"
+    android:layout_height="180dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.411" />
+
+    <!-- Asigna un identificador único para este LinearLayout que contiene los detalles de la categoría. -->
+    <!-- Establece que el ancho del LinearLayout debe ocupar todo el ancho del contenedor padre. -->
+    <!-- La altura del LinearLayout se ajusta a su contenido. -->
+    <!-- Organiza los elementos dentro del LinearLayout de forma vertical (de arriba a abajo). -->
+    <!-- Añade un relleno de 16dp alrededor del contenido dentro del LinearLayout. -->
+    <!-- Hace que el LinearLayout sea invisible por defecto. Esto se puede cambiar dinámicamente en el código. -->
+    <!-- Establece la restricción para que la parte superior del LinearLayout se alinee con la parte inferior del fragmento de mapa. -->
+
+
+    <LinearLayout
+    android:id="@+id/detailsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:visibility="gone"
+    app:layout_constraintTop_toBottomOf="@id/mapFragment">
+
+        <!-- Asigna un identificador único para este TextView. -->
+        <!-- La anchura del TextView se ajusta al contenido. -->
+        <!-- La altura del TextView se ajusta al contenido. -->
+        <!-- El texto que se mostrará en el TextView. -->
+        <!-- Establece el tamaño del texto a 18sp. -->
+        <!-- Hace que el texto del TextView sea en negrita. -->
+
+
+        <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView para mostrar los puntos de interés -->
+        <!-- Asigna un identificador único para este RecyclerView que mostrará los puntos de interés. -->
+        <!-- Establece que el ancho del RecyclerView debe ocupar todo el ancho del contenedor padre. -->
+        <!-- Establece que la altura del RecyclerView debe ajustarse al contenido. -->
+        <!-- Botón para agregar a favoritos -->
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pointsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <!-- Asigna un identificador único para este botón de agregar a favoritos. -->
+    <!-- La anchura del botón se ajusta al contenido del texto. -->
+    <!-- La altura del botón se ajusta al contenido. -->
+    <!-- Añade un margen superior de 16dp para separar el botón del contenido superior. -->
+    <!-- El texto que se mostrará en el botón. -->
+    <!-- Hace que el botón sea invisible por defecto. -->
+    <!-- Establece la restricción para que el final del botón se alinee con el final del contenedor padre. -->
+    <!-- Establece la restricción para que el inicio del botón se alinee con el inicio del contenedor padre. -->
+    <!-- Establece la restricción para que la parte superior del botón se alinee con la parte inferior del LinearLayout de detalles. -->
+
+    <Button
+    android:id="@+id/addFavoriteButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Agregar a favoritos"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/detailsLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Esta línea cierra la etiqueta del ConstraintLayout, finalizando la estructura del layout. -->

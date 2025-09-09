@@ -1,0 +1,22 @@
+<!-- Declara el espacio de nombres XML para los atributos estándar de Android, lo que permite usar atributos como "android:layout_width", "android:layout_height", etc. -->
+<!-- Establece que el ancho del `LinearLayout` debe ajustarse al ancho completo de su contenedor padre. "match_parent" hace que la vista ocupe todo el espacio disponible horizontalmente. -->
+<!-- Establece que la altura del `LinearLayout` debe ajustarse a la altura completa de su contenedor padre. "match_parent" hace que la vista ocupe todo el espacio disponible verticalmente. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Define que el `LinearLayout` organizará sus elementos de manera vertical (de arriba hacia abajo). -->
+
+
+    <!-- Asigna un identificador único al `RecyclerView`. Este ID permite hacer referencia al `RecyclerView` en el código Java/Kotlin (en este caso, el ID será "favoritesRecyclerView"). -->
+    <!-- Establece que el ancho del `RecyclerView` debe ajustarse al ancho completo del contenedor padre (en este caso, el `LinearLayout`). -->
+    <!-- Establece que la altura del `RecyclerView` debe ajustarse al alto completo del contenedor padre. -->
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/favoritosRecycled"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <!-- Esta línea cierra la etiqueta del `LinearLayout`, finalizando la estructura del contenedor. -->
