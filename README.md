@@ -6,7 +6,7 @@
 
 ## 📂 Índice de Proyectos
 
-### 1. [Acceso a Datos](./Acceso%20a%Datos)
+### 1. [Acceso a Datos](./Acceso%20a%20Datos)
 - **Descripción:** Ejercicios y prácticas sobre gestión y manipulación de datos.
 - **Incluye:**
   - Conexión a bases de datos
@@ -24,7 +24,7 @@
 ### 3. [Procesos y Servicios](./Procesos%20y%20Servicios)
 - Ejemplos prácticos de servicios en segundo plano, notificaciones y manejo de hilos.
 
-### 4. [Proyecto TFG / SafeHer_master](./SafeHer_master)
+### 4. [Proyecto TFG / SafeHer_master](./Proyecto%20TFG/safeher-master)
 - **Descripción:** Aplicación móvil orientada a la seguridad de las mujeres al solicitar un taxi.
 - **Funcionalidades principales:**
   - Botón de llamadas de emergencia
