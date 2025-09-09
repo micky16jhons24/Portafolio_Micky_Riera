@@ -6,7 +6,7 @@
 
 ## 📂 Índice de Proyectos
 
-### 1. [Acceso a Datos](./Acceso%20a%Datos){:target="_blank"}
+### 1. [Acceso a Datos](./Acceso%20a%Datos)
 - **Descripción:** Ejercicios y prácticas sobre gestión y manipulación de datos.
 - **Incluye:**
   - Conexión a bases de datos
@@ -17,14 +17,14 @@
 
 ---
 
-### 2. [Android Studio](./Android%20Studio){:target="_blank"}
+### 2. [Android Studio](./Android%20Studio)
 - **Descripción:** Aplicaciones móviles desarrolladas con Android Studio.
 - **Estado:** Completado / En progreso según proyecto
 
-### 3. [Procesos y Servicios](./Procesos%20y%20Servicios){:target="_blank"}
+### 3. [Procesos y Servicios](./Procesos%20y%20Servicios)
 - Ejemplos prácticos de servicios en segundo plano, notificaciones y manejo de hilos.
 
-### 4. [Proyecto TFG / SafeHer_master](./SafeHer_master){:target="_blank"}
+### 4. [Proyecto TFG / SafeHer_master](./SafeHer_master)
 - **Descripción:** Aplicación móvil orientada a la seguridad de las mujeres al solicitar un taxi.
 - **Funcionalidades principales:**
   - Botón de llamadas de emergencia
